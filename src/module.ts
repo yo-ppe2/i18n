@@ -107,7 +107,8 @@ export default defineNuxtModule<NuxtI18nOptions>({
     // for public
     nuxt.options.runtimeConfig.public.i18n = defu(nuxt.options.runtimeConfig.public.i18n, {
       experimental: options.experimental,
-      baseUrl: options.baseUrl
+      baseUrl: options.baseUrl,
+      globalInjection: options.globalInjection,
       // TODO: we should support more i18n module options. welcome PRs :-)
     })
 
